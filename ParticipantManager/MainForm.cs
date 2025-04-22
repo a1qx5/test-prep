@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ParticipantManager.Entities;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Xml.Serialization;
 
 namespace ParticipantManager
 {
@@ -22,7 +25,18 @@ namespace ParticipantManager
 
         private void serializaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                using(FileStream stream = File.Create("participants.bin"))
+                {
+                    formatter.Serialize(stream, _participants);
+                }
+                MessageBox.Show("Participants saved (binary)");
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Error saving binary file: " + ex.Message, "Save Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void tbLastName_Validating(object sender, CancelEventArgs e)
@@ -112,6 +126,44 @@ namespace ParticipantManager
             {
                 MessageBox.Show("An unexpected error occured: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void dToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BinaryFormatter formatter = new BinaryFormatter();
+                using (FileStream stream = File.OpenRead("participants.bin"))
+                {
+                    if (stream.Length > 0)
+                    {
+                        _participants = (List<Participant>)formatter.Deserialize(stream);
+                        DisplayParticipants();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Binary file is empty");
+                        _participants.Clear();
+                        DisplayParticipants();
+                    }
+                }
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("Binary file not found", "Load error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                _participants.Clear();
+                DisplayParticipants();
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Error reading binary file: " + ex.Message, "Load Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                _participants.Clear(); // Clear list on error
+                DisplayParticipants();
+            }
+        }
+
+        private void serializeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

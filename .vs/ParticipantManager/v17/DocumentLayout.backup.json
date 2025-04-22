@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Alex\\source\\repos\\test-prep\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C321AF63-BDCF-4D46-BCD6-1740FC1E1425}|ParticipantManager\\ParticipantManager.csproj|c:\\users\\alex\\source\\repos\\test-prep\\participantmanager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C321AF63-BDCF-4D46-BCD6-1740FC1E1425}|ParticipantManager\\ParticipantManager.csproj|solutionrelative:participantmanager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C321AF63-BDCF-4D46-BCD6-1740FC1E1425}|ParticipantManager\\ParticipantManager.csproj|C:\\Users\\Alex\\source\\repos\\test-prep\\participantmanager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C321AF63-BDCF-4D46-BCD6-1740FC1E1425}|ParticipantManager\\ParticipantManager.csproj|solutionrelative:participantmanager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C321AF63-BDCF-4D46-BCD6-1740FC1E1425}|ParticipantManager\\ParticipantManager.csproj|c:\\users\\alex\\source\\repos\\test-prep\\participantmanager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C321AF63-BDCF-4D46-BCD6-1740FC1E1425}|ParticipantManager\\ParticipantManager.csproj|solutionrelative:participantmanager\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C321AF63-BDCF-4D46-BCD6-1740FC1E1425}|ParticipantManager\\ParticipantManager.csproj|C:\\Users\\Alex\\source\\repos\\test-prep\\participantmanager\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 307,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,13 +47,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\test-prep\\ParticipantManager\\MainForm.cs",
               "RelativeDocumentMoniker": "ParticipantManager\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Alex\\source\\repos\\test-prep\\ParticipantManager\\MainForm.cs",
-              "RelativeToolTip": "ParticipantManager\\MainForm.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAlwC0AAAAgAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Alex\\source\\repos\\test-prep\\ParticipantManager\\MainForm.cs*",
+              "RelativeToolTip": "ParticipantManager\\MainForm.cs*",
+              "ViewState": "AgIAABYAAAAAAAAAAAAEwCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-22T14:13:41.202Z",
               "EditorCaption": ""
@@ -72,12 +72,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Alex\\source\\repos\\test-prep\\ParticipantManager\\MainForm.cs",
               "RelativeDocumentMoniker": "ParticipantManager\\MainForm.cs",
-              "ToolTip": "C:\\Users\\Alex\\source\\repos\\test-prep\\ParticipantManager\\MainForm.cs [Design]",
-              "RelativeToolTip": "ParticipantManager\\MainForm.cs [Design]",
+              "ToolTip": "C:\\Users\\Alex\\source\\repos\\test-prep\\ParticipantManager\\MainForm.cs [Design]*",
+              "RelativeToolTip": "ParticipantManager\\MainForm.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-22T13:38:06.673Z",
               "EditorCaption": " [Design]"
