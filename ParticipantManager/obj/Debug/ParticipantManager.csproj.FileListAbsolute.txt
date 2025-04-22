@@ -1,0 +1,10 @@
+C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\bin\Debug\ParticipantManager.exe.config
+C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\bin\Debug\ParticipantManager.exe
+C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\bin\Debug\ParticipantManager.pdb
+C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\obj\Debug\ParticipantManager.csproj.AssemblyReference.cache
+C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\obj\Debug\ParticipantManager.MainForm.resources
+C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\obj\Debug\ParticipantManager.Properties.Resources.resources
+C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\obj\Debug\ParticipantManager.csproj.GenerateResource.cache
+C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\obj\Debug\ParticipantManager.csproj.CoreCompileInputs.cache
+C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\obj\Debug\ParticipantManager.exe
+C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\obj\Debug\ParticipantManager.pdb
