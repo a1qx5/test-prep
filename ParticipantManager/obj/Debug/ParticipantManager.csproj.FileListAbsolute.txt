@@ -8,3 +8,13 @@ C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\obj\Debug\Part
 C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\obj\Debug\ParticipantManager.csproj.CoreCompileInputs.cache
 C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\obj\Debug\ParticipantManager.exe
 C:\Users\alexx\source\repos\ParticipantManager\ParticipantManager\obj\Debug\ParticipantManager.pdb
+C:\Users\Alex\Source\Repos\test-prep\ParticipantManager\bin\Debug\ParticipantManager.exe.config
+C:\Users\Alex\Source\Repos\test-prep\ParticipantManager\bin\Debug\ParticipantManager.exe
+C:\Users\Alex\Source\Repos\test-prep\ParticipantManager\bin\Debug\ParticipantManager.pdb
+C:\Users\Alex\Source\Repos\test-prep\ParticipantManager\obj\Debug\ParticipantManager.csproj.AssemblyReference.cache
+C:\Users\Alex\Source\Repos\test-prep\ParticipantManager\obj\Debug\ParticipantManager.MainForm.resources
+C:\Users\Alex\Source\Repos\test-prep\ParticipantManager\obj\Debug\ParticipantManager.Properties.Resources.resources
+C:\Users\Alex\Source\Repos\test-prep\ParticipantManager\obj\Debug\ParticipantManager.csproj.GenerateResource.cache
+C:\Users\Alex\Source\Repos\test-prep\ParticipantManager\obj\Debug\ParticipantManager.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Source\Repos\test-prep\ParticipantManager\obj\Debug\ParticipantManager.exe
+C:\Users\Alex\Source\Repos\test-prep\ParticipantManager\obj\Debug\ParticipantManager.pdb

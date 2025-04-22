@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.components = new System.ComponentModel.Container();
+            this.menuStripSerialization = new System.Windows.Forms.MenuStrip();
             this.binarySerializationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serializaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -36,6 +37,7 @@
             this.serializeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deserializeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.teToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gbNewParticipant = new System.Windows.Forms.GroupBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dtpBirthDate = new System.Windows.Forms.DateTimePicker();
@@ -44,26 +46,28 @@
             this.lblBirthDate = new System.Windows.Forms.Label();
             this.lblFirstName = new System.Windows.Forms.Label();
             this.lblLastName = new System.Windows.Forms.Label();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvParticipants = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.menuStripSerialization.SuspendLayout();
             this.gbNewParticipant.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStripSerialization
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStripSerialization.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStripSerialization.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.binarySerializationToolStripMenuItem,
             this.xMLSerializationToolStripMenuItem,
             this.teToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(835, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStripSerialization.Location = new System.Drawing.Point(0, 0);
+            this.menuStripSerialization.Name = "menuStripSerialization";
+            this.menuStripSerialization.Size = new System.Drawing.Size(1113, 28);
+            this.menuStripSerialization.TabIndex = 0;
+            this.menuStripSerialization.Text = "menuStrip1";
             // 
             // binarySerializationToolStripMenuItem
             // 
@@ -71,20 +75,20 @@
             this.serializaToolStripMenuItem,
             this.dToolStripMenuItem});
             this.binarySerializationToolStripMenuItem.Name = "binarySerializationToolStripMenuItem";
-            this.binarySerializationToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
+            this.binarySerializationToolStripMenuItem.Size = new System.Drawing.Size(150, 24);
             this.binarySerializationToolStripMenuItem.Text = "Binary Serialization";
             // 
             // serializaToolStripMenuItem
             // 
             this.serializaToolStripMenuItem.Name = "serializaToolStripMenuItem";
-            this.serializaToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.serializaToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.serializaToolStripMenuItem.Text = "Serialize";
             this.serializaToolStripMenuItem.Click += new System.EventHandler(this.serializaToolStripMenuItem_Click);
             // 
             // dToolStripMenuItem
             // 
             this.dToolStripMenuItem.Name = "dToolStripMenuItem";
-            this.dToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.dToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.dToolStripMenuItem.Text = "Deserialize";
             // 
             // xMLSerializationToolStripMenuItem
@@ -93,19 +97,19 @@
             this.serializeToolStripMenuItem,
             this.deserializeToolStripMenuItem});
             this.xMLSerializationToolStripMenuItem.Name = "xMLSerializationToolStripMenuItem";
-            this.xMLSerializationToolStripMenuItem.Size = new System.Drawing.Size(109, 20);
+            this.xMLSerializationToolStripMenuItem.Size = new System.Drawing.Size(138, 24);
             this.xMLSerializationToolStripMenuItem.Text = "XML Serialization";
             // 
             // serializeToolStripMenuItem
             // 
             this.serializeToolStripMenuItem.Name = "serializeToolStripMenuItem";
-            this.serializeToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.serializeToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.serializeToolStripMenuItem.Text = "Serialize";
             // 
             // deserializeToolStripMenuItem
             // 
             this.deserializeToolStripMenuItem.Name = "deserializeToolStripMenuItem";
-            this.deserializeToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.deserializeToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.deserializeToolStripMenuItem.Text = "Deserialize";
             // 
             // teToolStripMenuItem
@@ -113,8 +117,14 @@
             this.teToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exportToolStripMenuItem});
             this.teToolStripMenuItem.Name = "teToolStripMenuItem";
-            this.teToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.teToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
             this.teToolStripMenuItem.Text = "TextFile";
+            // 
+            // exportToolStripMenuItem
+            // 
+            this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.exportToolStripMenuItem.Text = "Export";
             // 
             // gbNewParticipant
             // 
@@ -125,9 +135,11 @@
             this.gbNewParticipant.Controls.Add(this.lblBirthDate);
             this.gbNewParticipant.Controls.Add(this.lblFirstName);
             this.gbNewParticipant.Controls.Add(this.lblLastName);
-            this.gbNewParticipant.Location = new System.Drawing.Point(13, 49);
+            this.gbNewParticipant.Location = new System.Drawing.Point(17, 60);
+            this.gbNewParticipant.Margin = new System.Windows.Forms.Padding(4);
             this.gbNewParticipant.Name = "gbNewParticipant";
-            this.gbNewParticipant.Size = new System.Drawing.Size(810, 152);
+            this.gbNewParticipant.Padding = new System.Windows.Forms.Padding(4);
+            this.gbNewParticipant.Size = new System.Drawing.Size(1080, 187);
             this.gbNewParticipant.TabIndex = 1;
             this.gbNewParticipant.TabStop = false;
             this.gbNewParticipant.Text = "New Participant";
@@ -136,43 +148,51 @@
             // 
             this.btnAdd.BackColor = System.Drawing.Color.Silver;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Location = new System.Drawing.Point(524, 92);
+            this.btnAdd.Location = new System.Drawing.Point(699, 113);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(0);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(263, 46);
+            this.btnAdd.Size = new System.Drawing.Size(351, 57);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.Text = "Add Participant";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dtpBirthDate
             // 
-            this.dtpBirthDate.Location = new System.Drawing.Point(587, 40);
+            this.dtpBirthDate.Location = new System.Drawing.Point(774, 52);
+            this.dtpBirthDate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpBirthDate.Name = "dtpBirthDate";
-            this.dtpBirthDate.Size = new System.Drawing.Size(200, 20);
+            this.dtpBirthDate.Size = new System.Drawing.Size(265, 22);
             this.dtpBirthDate.TabIndex = 5;
+            this.dtpBirthDate.Validating += new System.ComponentModel.CancelEventHandler(this.dtpBirthDate_Validating);
             // 
             // tbFirstName
             // 
             this.tbFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbFirstName.Location = new System.Drawing.Point(77, 78);
+            this.tbFirstName.Location = new System.Drawing.Point(103, 96);
+            this.tbFirstName.Margin = new System.Windows.Forms.Padding(4);
             this.tbFirstName.Name = "tbFirstName";
-            this.tbFirstName.Size = new System.Drawing.Size(188, 20);
+            this.tbFirstName.Size = new System.Drawing.Size(250, 22);
             this.tbFirstName.TabIndex = 4;
+            this.tbFirstName.Validating += new System.ComponentModel.CancelEventHandler(this.tbFirstName_Validating);
             // 
             // tbLastName
             // 
             this.tbLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbLastName.Location = new System.Drawing.Point(77, 40);
+            this.tbLastName.Location = new System.Drawing.Point(103, 49);
+            this.tbLastName.Margin = new System.Windows.Forms.Padding(4);
             this.tbLastName.Name = "tbLastName";
-            this.tbLastName.Size = new System.Drawing.Size(188, 20);
+            this.tbLastName.Size = new System.Drawing.Size(250, 22);
             this.tbLastName.TabIndex = 3;
+            this.tbLastName.Validating += new System.ComponentModel.CancelEventHandler(this.tbLastName_Validating);
             // 
             // lblBirthDate
             // 
             this.lblBirthDate.AutoSize = true;
-            this.lblBirthDate.Location = new System.Drawing.Point(521, 46);
+            this.lblBirthDate.Location = new System.Drawing.Point(695, 57);
+            this.lblBirthDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBirthDate.Name = "lblBirthDate";
-            this.lblBirthDate.Size = new System.Drawing.Size(60, 13);
+            this.lblBirthDate.Size = new System.Drawing.Size(71, 16);
             this.lblBirthDate.TabIndex = 2;
             this.lblBirthDate.Text = "Birth Date: ";
             this.lblBirthDate.Click += new System.EventHandler(this.serializaToolStripMenuItem_Click);
@@ -180,34 +200,37 @@
             // lblFirstName
             // 
             this.lblFirstName.AutoSize = true;
-            this.lblFirstName.Location = new System.Drawing.Point(7, 78);
+            this.lblFirstName.Location = new System.Drawing.Point(9, 96);
+            this.lblFirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFirstName.Name = "lblFirstName";
-            this.lblFirstName.Size = new System.Drawing.Size(63, 13);
+            this.lblFirstName.Size = new System.Drawing.Size(78, 16);
             this.lblFirstName.TabIndex = 1;
             this.lblFirstName.Text = "First Name: ";
             // 
             // lblLastName
             // 
             this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(7, 40);
+            this.lblLastName.Location = new System.Drawing.Point(9, 49);
+            this.lblLastName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(64, 13);
+            this.lblLastName.Size = new System.Drawing.Size(78, 16);
             this.lblLastName.TabIndex = 0;
             this.lblLastName.Text = "Last Name: ";
             // 
-            // listView1
+            // lvParticipants
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvParticipants.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(13, 208);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(810, 230);
-            this.listView1.TabIndex = 2;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.lvParticipants.HideSelection = false;
+            this.lvParticipants.Location = new System.Drawing.Point(17, 256);
+            this.lvParticipants.Margin = new System.Windows.Forms.Padding(4);
+            this.lvParticipants.Name = "lvParticipants";
+            this.lvParticipants.Size = new System.Drawing.Size(1079, 282);
+            this.lvParticipants.TabIndex = 2;
+            this.lvParticipants.UseCompatibleStateImageBehavior = false;
+            this.lvParticipants.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -224,27 +247,29 @@
             this.columnHeader3.Text = "Birth Date";
             this.columnHeader3.Width = 120;
             // 
-            // exportToolStripMenuItem
+            // errorProvider
             // 
-            this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exportToolStripMenuItem.Text = "Export";
+            this.errorProvider.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProvider.ContainerControl = this;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(835, 450);
-            this.Controls.Add(this.listView1);
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.ClientSize = new System.Drawing.Size(1113, 554);
+            this.Controls.Add(this.lvParticipants);
             this.Controls.Add(this.gbNewParticipant);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.menuStripSerialization);
+            this.MainMenuStrip = this.menuStripSerialization;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "Form1";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.menuStripSerialization.ResumeLayout(false);
+            this.menuStripSerialization.PerformLayout();
             this.gbNewParticipant.ResumeLayout(false);
             this.gbNewParticipant.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,7 +277,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStripSerialization;
         private System.Windows.Forms.GroupBox gbNewParticipant;
         private System.Windows.Forms.ToolStripMenuItem binarySerializationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem serializaToolStripMenuItem;
@@ -268,11 +293,12 @@
         private System.Windows.Forms.Label lblLastName;
         private System.Windows.Forms.DateTimePicker dtpBirthDate;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvParticipants;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
 
