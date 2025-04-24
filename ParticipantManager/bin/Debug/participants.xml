@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ArrayOfParticipant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Participant>
+    <LastName>a</LastName>
+    <FirstName>d</FirstName>
+    <BirthDate>2025-04-08T11:20:40</BirthDate>
+  </Participant>
+  <Participant>
+    <LastName>asd</LastName>
+    <FirstName>asd</FirstName>
+    <BirthDate>2025-04-01T11:20:50</BirthDate>
+  </Participant>
+  <Participant>
+    <LastName>asdasd</LastName>
+    <FirstName>asdasdasd</FirstName>
+    <BirthDate>2025-02-25T11:21:08</BirthDate>
+  </Participant>
+</ArrayOfParticipant>

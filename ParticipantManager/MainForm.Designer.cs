@@ -81,14 +81,14 @@
             // serializaToolStripMenuItem
             // 
             this.serializaToolStripMenuItem.Name = "serializaToolStripMenuItem";
-            this.serializaToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.serializaToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.serializaToolStripMenuItem.Text = "Serialize";
             this.serializaToolStripMenuItem.Click += new System.EventHandler(this.serializaToolStripMenuItem_Click);
             // 
             // dToolStripMenuItem
             // 
             this.dToolStripMenuItem.Name = "dToolStripMenuItem";
-            this.dToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.dToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
             this.dToolStripMenuItem.Text = "Deserialize";
             this.dToolStripMenuItem.Click += new System.EventHandler(this.dToolStripMenuItem_Click);
             // 
@@ -111,8 +111,9 @@
             // deserializeToolStripMenuItem
             // 
             this.deserializeToolStripMenuItem.Name = "deserializeToolStripMenuItem";
-            this.deserializeToolStripMenuItem.Size = new System.Drawing.Size(165, 26);
+            this.deserializeToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.deserializeToolStripMenuItem.Text = "Deserialize";
+            this.deserializeToolStripMenuItem.Click += new System.EventHandler(this.deserializeToolStripMenuItem_Click);
             // 
             // teToolStripMenuItem
             // 
@@ -125,8 +126,9 @@
             // exportToolStripMenuItem
             // 
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(135, 26);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exportToolStripMenuItem.Text = "Export";
+            this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // gbNewParticipant
             // 
